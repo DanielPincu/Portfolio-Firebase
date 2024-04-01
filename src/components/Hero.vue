@@ -139,7 +139,7 @@ const closeModal = () => {
 };
 </script>
 
-<style scoped>
+<style>
 @keyframes pulse {
   0%, 100% {
     opacity: 1;

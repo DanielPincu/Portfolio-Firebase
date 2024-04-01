@@ -1,4 +1,13 @@
 <template>
+
+      <div class="flex justify-center" data-aos="fade-right">
+              <img class="w-48 mt-10" src="/public/assets/img/pd.png">
+      </div>
+      <div class="border-b-2 border-zinc-200 pb-5 mb-16" data-aos="flip-up">
+        <h1 class="text-2xl font-bold text-center mt-5">Daniel Pincu</h1>
+        <p class="text-center text-gray-500">Front-end developer</p>    
+      </div>
+
   <div>
     <h1 class="font-bold text-2xl text-center pt-5">Info</h1>
     <div v-for="item in my_info" class="font-bold shadow-xl text-xl border-2 border-blue-300 dark:border-red-300 mx-5 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16">
