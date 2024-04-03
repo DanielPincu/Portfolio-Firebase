@@ -7,7 +7,7 @@
     <!-- Dropdown menu for filtering -->
     <div class="text-center mb-6">
       <label for="category" class="block text-lg font-medium text-gray-700">Select a category:</label>
-      <select v-model="selectedCategory" id="category" name="category" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+      <select v-model="selectedCategory" id="category" name="category" class="bg-blue-100 dark:bg-red-100 mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
         <option value="">All Categories</option>
         <option v-for="category in categories" :value="category">{{ category }}</option>
       </select>
