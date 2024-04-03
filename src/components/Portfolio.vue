@@ -23,14 +23,14 @@
             </div>
             <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-60 dark:bg-red-200 p-4" @click="toggleVisibility(index)">
               <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5 2xl:pl-5">{{ item.title }}</h1>
-              <p class=" mb-5 2xl:px-5">{{ item.info }}</p>
+              <p class="mb-5 2xl:px-5">{{ item.info }}</p>
             </div>
             <div v-show="visibleDiv[index]">
               <!-- Content to display when the card is expanded -->
               <a @click="openModal(item.remote_link, index)">
                 <img :src="item.image_link" class="bg-blue-200 border-t-2 border-b-2 border-transparent hover:border-blue-500 hover:dark:border-red-500 dark:bg-red-200 ease-in-out duration-100">
               </a>
-              <p class="bg-blue-200 dark:bg-red-200 p-10">{{ item.extra_info }}</p>
+              <p class="bg-blue-200 dark:bg-red-200 m-5 2xl:px-5">{{ item.extra_info }}</p>
             </div>
           </div>
         </div>

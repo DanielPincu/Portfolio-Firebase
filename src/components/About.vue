@@ -12,7 +12,7 @@
         </div>
         <div class="grid xl:grid-cols-2 gap-10 grid-cols-1">
           <div>
-            <p v-for="(paragraph, index) in paragraphs" :key="index" class="mb-5 max-2xl:pl-5">{{ paragraph }}</p>
+            <p v-for="(paragraph, index) in paragraphs" :key="index" class="mb-5">{{ paragraph }}</p>
           </div>
           <div class="hidden lg:block">
             <img class="rounded-3xl" :src="imageSrc" alt="">
