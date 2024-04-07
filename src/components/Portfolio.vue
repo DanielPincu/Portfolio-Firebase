@@ -149,25 +149,29 @@ const openModal = async (content, index) => {
 <style scoped>
 
 .monitor {
-	background: #777; 
+	background: #5693be; 
 	position: relative;
-	border-top: 20px solid #888; 
+	border-top: 20px solid #91b3d2; 
+  border-right: 5px solid #777;
 	margin: 5%;
 	padding: 2% 2% 4% 2%; 
 	border-radius: 10px; 
 	border-bottom-left-radius: 50% 4%; 
 	border-bottom-right-radius: 50% 4%; 
+  border-top-left-radius: 25px; 
 }
 
 .dark .monitor {
 	background: #888; 
 	position: relative;
-	border-top: 20px solid #999; 
+	border-top: 20px solid #999;
+  border-right: 5px solid #777; 
 	margin: 5%;
 	padding: 2% 2% 4% 2%; 
 	border-radius: 10px; 
 	border-bottom-left-radius: 50% 4%; 
 	border-bottom-right-radius: 50% 4%; 
+  border-top-left-radius: 25px; 
 }
 
 .monitor:after {
