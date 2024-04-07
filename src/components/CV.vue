@@ -52,7 +52,7 @@
       </div>
     </div>
 
-    <div class="pt-10 sticky top-0">
+    <div class="pt-10 sticky top-0" data-aos="fade-up" data-aos-duration="2000">
       <h1 class="font-bold text-2xl text-center pt-5">Hobbies</h1>
       <div v-for="item in hobbies" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-xl font-bold px-4">{{ item.line1 }}</h1>
