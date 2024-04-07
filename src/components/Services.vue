@@ -3,7 +3,7 @@
     <h1 class="text-4xl pt-5 pb-16">{{ pageTitle.title }}</h1>
   </div>
 
-  <div class="xl:grid md:grid-cols-4 grid-cols-2 items-center gap-5 md:pb-10 mb-16 hidden">
+  <div class="xl:grid md:grid-cols-4 grid-cols-2 items-center gap-5 md:pb-10 mb-16 hidden tt">
 
     <div v-for="(service, index) in services" :key="index" @click="toggleVisibility(index)" class=" cursor-pointer border-2 border-blue-300 dark:border-red-300 bg-blue-200 dark:bg-red-200 rounded-3xl drop-shadow-xl h-52 flex flex-col items-center mb-10 hover:scale-[103%] duration-500">
       <h1 class="text-2xl text-blue-500 dark:text-red-500 text-center pt-10">{{ service.title }}</h1>

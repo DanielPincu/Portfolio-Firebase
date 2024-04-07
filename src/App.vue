@@ -14,8 +14,8 @@ onMounted(() => {
   anime({
     targets: '.tt',
     opacity: [0, 1],
-    translateY: [-500, 0],
-    translateX: [400, 0], 
+    translateY: [-900, 0],
+    translateX: [0, 0], 
     easing: "linear",
     duration: 1000,
   });

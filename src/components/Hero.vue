@@ -10,7 +10,7 @@
       </div>
     </div>
 
-  <div class="relative" data-aos="flip-right" data-aos-duration="1000">
+  <div class="relative tt" data-aos="flip-right" data-aos-duration="1000">
     
     <img class="rounded-full blink border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="/assets/img/matrix.jpeg" alt="">
 
