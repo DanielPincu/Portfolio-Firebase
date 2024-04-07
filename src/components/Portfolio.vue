@@ -21,7 +21,7 @@
             <!-- <div class="suitcase-top blink-blue blink-red bg-blue-400 dark:bg-red-400 p-4 relative">
               <div class="handle bg-blue-600 dark:bg-red-700 w-6 h-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
             </div> -->
-            <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-60 dark:bg-red-200 p-4" @click="toggleVisibility(index)">
+            <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-64 dark:bg-red-200 p-4" @click="toggleVisibility(index)">
               <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5 2xl:pl-5">{{ item.title }}</h1>
               <p class="mb-5 2xl:px-5">{{ item.info }}</p>
             </div>
