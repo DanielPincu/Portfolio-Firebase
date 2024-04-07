@@ -45,6 +45,3 @@ const buttonText = computed(() => {
 });
 </script>
 
-<style>
-/* Your component styles here */
-</style>

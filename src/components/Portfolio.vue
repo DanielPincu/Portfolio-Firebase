@@ -18,7 +18,7 @@
       <div v-for="(item, index) in filteredCards" :key="index" class="suitcase-card cursor-pointer">
         <div class="suitcase-wrapper">
           <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
-            <div class="suitcase-top bg-blue-400 dark:bg-red-400 p-4 relative">
+            <div class="suitcase-top blink-blue blink-red bg-blue-400 dark:bg-red-400 p-4 relative">
               <div class="handle bg-blue-600 dark:bg-red-700 w-6 h-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
             </div>
             <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-60 dark:bg-red-200 p-4" @click="toggleVisibility(index)">

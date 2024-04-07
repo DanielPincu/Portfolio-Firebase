@@ -12,7 +12,7 @@
 
   <div class="relative" data-aos="flip-left" data-aos-duration="1000">
     
-    <img class="rounded-full border-4 border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="/assets/img/matrix.jpeg" alt="">
+    <img class="rounded-full blink border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="/assets/img/matrix.jpeg" alt="">
 
    
     <div class="absolute inset-0 flex flex-col justify-center items-center text-center" id="home">
@@ -31,12 +31,31 @@
       <p class="text-xl md:text-3xl xl:text-5xl pl-3 mb-1 text-white">Welcome to the Matrix<span class="animate-pulse">|</span></p>
 
      
-      <div class="flex md:pt-5 2xl:pt-24">
+      <!-- <div class="flex md:pt-5 2xl:pt-24">
         <button @click="openModal('Download')" class="hidden dark:block cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">Fetch CV</button>
         <button @click="openModal('Watch')" class="block dark:hidden cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">Watch CV</button>
         <button @click="openModal('Watch')" class="hidden dark:block cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-400 dark:to-blue-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44">Watch CV</button>
         <button @click="openModal('Download')" class="block dark:hidden cv-button bg-gradient-to-r from-red-400 to-red-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44">Fetch CV</button>
-      </div>
+      </div> -->
+
+      <div class="flex md:pt-5 2xl:pt-24">
+  <button @click="openModal('Download')" class="hidden dark:block button bg-red-500  shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">
+    <span>Fetch CV</span>
+    <div class="liquid"></div>
+  </button>
+  <button @click="openModal('Watch')" class="block dark:hidden button bg-blue-500 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">
+    <span>Watch CV</span>
+    <div class="liquid2"></div>
+  </button>
+  <button @click="openModal('Watch')" class="hidden dark:block button bg-blue-500 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44">
+    <span>Watch CV</span>
+    <div class="liquid2"></div>
+  </button>
+  <button @click="openModal('Download')" class="block dark:hidden button bg-red-500 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44">
+    <span>Fetch CV</span>
+    <div class="liquid"></div>
+  </button>
+</div>
     </div>
   </div>
 
