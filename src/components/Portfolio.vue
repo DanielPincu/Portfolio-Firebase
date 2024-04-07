@@ -162,7 +162,7 @@ const openModal = async (content, index) => {
 }
 
 .dark .monitor {
-	background: #888; 
+	background: #ac8181; 
 	position: relative;
 	border-top: 20px solid #999;
   border-right: 5px solid #777; 
