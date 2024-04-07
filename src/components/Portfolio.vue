@@ -14,13 +14,13 @@
     </div>
 
     <!-- Portfolio cards -->
-    <div class="grid md:grid-cols-2 gap-10 mt-16">
+    <div class="grid md:grid-cols-2 mt-16">
       <div v-for="(item, index) in filteredCards" :key="index" class="suitcase-card cursor-pointer" data-aos="fade-up">
-        <div class="suitcase-wrapper crd-blue crd-red rounded-full">
+        <div class="suitcase-wrapper crd-blue crd-red rounded-full monitor">
           <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
-            <div class="suitcase-top blink-blue blink-red bg-blue-400 dark:bg-red-400 p-4 relative">
+            <!-- <div class="suitcase-top blink-blue blink-red bg-blue-400 dark:bg-red-400 p-4 relative">
               <div class="handle bg-blue-600 dark:bg-red-700 w-6 h-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            </div>
+            </div> -->
             <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-60 dark:bg-red-200 p-4" @click="toggleVisibility(index)">
               <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5 2xl:pl-5">{{ item.title }}</h1>
               <p class="mb-5 2xl:px-5">{{ item.info }}</p>
@@ -145,3 +145,45 @@ const openModal = async (content, index) => {
   showModal.value = true;
 };
 </script>
+
+<style scoped>
+
+.monitor {
+	background: #777; 
+	position: relative;
+	border-top: 20px solid #888; 
+	margin: 5%;
+	padding: 2% 2% 4% 2%; 
+	border-radius: 10px; 
+	border-bottom-left-radius: 50% 4%; 
+	border-bottom-right-radius: 50% 4%; 
+}
+
+.dark .monitor {
+	background: #888; 
+	position: relative;
+	border-top: 20px solid #999; 
+	margin: 5%;
+	padding: 2% 2% 4% 2%; 
+	border-radius: 10px; 
+	border-bottom-left-radius: 50% 4%; 
+	border-bottom-right-radius: 50% 4%; 
+}
+
+.monitor:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 3%;
+	left: 36%;
+	height: .5%; 
+	width: 28%;
+	background: #ddd; 
+	border-radius: 50%; 
+	box-shadow: 0 0 3px 0 white; 
+}
+
+
+
+
+</style>
