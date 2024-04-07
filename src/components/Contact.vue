@@ -15,7 +15,3 @@
 	  </div>
 	</div>
   </template>
-  
-  <script setup>
-	// No script setup needed for this template
-  </script>

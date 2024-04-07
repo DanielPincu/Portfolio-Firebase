@@ -10,11 +10,11 @@ import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 
 
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; // Import AOS CSS file
-// AOS.init({
-//     once: true,
-// });
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS file
+AOS.init({
+    once: true,
+});
 
 
 
