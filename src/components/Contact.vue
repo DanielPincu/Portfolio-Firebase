@@ -1,5 +1,5 @@
 <template>
-	<div class="flex justify-center items-center bg-blue-200 dark:bg-red-200 rounded-3xl shadow-xl mt-20 mb-5 border-2 border-blue-300 dark:border-red-300" id="contact" data-aos="flip-right" data-aos-duration="1000">
+	<div class="flex justify-center items-center bg-blue-200 dark:bg-red-200 rounded-3xl shadow-xl mt-20 mb-5 border-2 border-blue-300 dark:border-red-300 crd-blue crd-red" id="contact" data-aos="flip-right" data-aos-duration="1000">
 	  <div class="container mx-auto">
 		<h1 class="flex justify-center text-3xl mx-auto py-10">Drop me a message<span class="animate-pulse">|</span></h1>
 		<form target="_blank" action="https://formsubmit.co/yo8ufo@gmail.com" method="POST" class="w-full p-8 my-4 md:px-12">

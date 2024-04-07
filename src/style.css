@@ -147,13 +147,24 @@ button .liquid2 {
 
 
 
+.crd-blue {
+  box-shadow: 0 0 30px rgb(59 130 246);
+}
+
+.dark .crd-red {
+  box-shadow: 0 0 30px rgb(239 68 68);
+}
+
+
+
+
 @keyframes blink-red {
-  0%, 100% { box-shadow: 0 0 20px 3px red; }
+  0%, 100% { box-shadow: 0 0 5px 2px red; }
   50% { box-shadow: 0 0 5px red; }
 }
 
 @keyframes blink-blue {
-  0%, 100% { box-shadow: 0 0 20px 3px blue; }
+  0%, 100% { box-shadow: 0 0 5px 2px blue; }
   50% { box-shadow: 0 0 5px blue; }
 }
 

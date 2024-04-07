@@ -10,7 +10,7 @@
 
   <div>
     
-    <div v-for="item in my_info" class="shadow-xl text-xl border-2 border-blue-300 dark:border-red-300 mx-5 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16"
+    <div v-for="item in my_info" class="crd-blue crd-red shadow-xl text-xl border-2 border-blue-300 dark:border-red-300 mx-5 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16"
      data-aos="fade-up"
      data-aos-duration="2000">
 
@@ -24,7 +24,7 @@
 
   <div class="pt-10">
       <h1 class="font-bold text-2xl text-center pt-5">Languages</h1>
-      <div v-for="item in languages" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
+      <div v-for="item in languages" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-xl font-bold px-4">{{ item.line1 }}</h1>
         <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
           <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-white p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">{{ item.line2 }}%</div>
@@ -34,7 +34,7 @@
   
     <div class="pt-10">
       <h1 class="font-bold text-2xl text-center pt-5">Skills</h1>
-      <div v-for="item in skills" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
+      <div v-for="item in skills" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-xl font-bold px-4">{{ item.line1 }}</h1>
         <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
           <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-white p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">{{ item.line2 }}%</div>
@@ -44,7 +44,7 @@
   
     <div class="pt-10">
       <h1 class="font-bold text-2xl text-center pt-5">Tools</h1>
-      <div v-for="item in tools" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
+      <div v-for="item in tools" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-xl font-bold px-4">{{ item.line1 }}</h1>
         <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
           <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-white p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">{{ item.line2 }}%</div>
@@ -54,7 +54,7 @@
 
     <div class="pt-10 sticky top-0">
       <h1 class="font-bold text-2xl text-center pt-5">Hobbies</h1>
-      <div v-for="item in hobbies" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
+      <div v-for="item in hobbies" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-xl font-bold px-4">{{ item.line1 }}</h1>
         <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
           <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-white p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">{{ item.line2 }}%</div>
