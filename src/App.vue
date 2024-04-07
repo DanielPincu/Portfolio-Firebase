@@ -1,5 +1,5 @@
 <script setup>
-
+import { onMounted } from 'vue';
 import CV from './components/CV.vue'
 import Hero from './components/Hero.vue'
 import Services from './components/Services.vue'
@@ -8,7 +8,20 @@ import Portfolio from './components/Portfolio.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
+import anime from 'animejs'
 
+onMounted(() => {
+  anime({
+    targets: '.tt',
+    opacity: [0, 1],
+    translateY: [-500, 0],
+    translateX: [400, 0], 
+    easing: "linear",
+    duration: 1000,
+  });
+
+
+});
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS file

@@ -1,11 +1,6 @@
 <template>
   <div class="border-b-2 border-zinc-200 pb-20" id="about">
-    <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200 border-2 border-blue-300 dark:border-red-300" 
-    
-     data-aos="flip-right"
-     data-aos-offset="700"
-     data-aos-duration="1100"
-     >
+    <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200 border-2 border-blue-300 dark:border-red-300" data-aos="flip-right" data-aos-duration="1000">
       <div>
         <div class="flex justify-center">
           <h1 class="text-4xl py-10">About Me</h1>
