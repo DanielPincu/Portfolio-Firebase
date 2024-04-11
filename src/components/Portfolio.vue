@@ -22,12 +22,13 @@
               <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5 2xl:pl-5">{{ item.title }}</h1>
               <p class="mb-5 2xl:px-5">{{ item.info }}</p>
             </div>
-            <div v-show="visibleDiv[index]">
+            <div class="flex flex-col" v-show="visibleDiv[index]">
               <!-- Content to display when the card is expanded -->
               <a @click="openModal(item.remote_link, index)">
-                <img :src="item.image_link" class="bg-blue-200 border-t-2 border-b-2 border-transparent hover:border-blue-500 hover:dark:border-red-500 dark:bg-red-200 ease-in-out duration-100">
+                <img :src="item.image_link" class="bg-blue-200 border-t-4 border-b-4 border-transparent hover:border-blue-500 hover:dark:border-red-500 dark:bg-red-200 ease-in-out duration-300">
               </a>
-              <p class="bg-blue-200 dark:bg-red-200 m-5 2xl:px-5">{{ item.extra_info }}</p>
+              <p @click="toggleVisibility(index)" class="bg-blue-200 dark:bg-red-200 m-5 2xl:px-5">{{ item.extra_info }}</p>
+              <button @click="openModal(item.remote_link, index)" class="mb-10 rounded-full mx-5 bg-gradient-to-r hover:scale-[101%] from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 text-white">Visit project</button>
             </div>
           </div>
         </div>
@@ -44,7 +45,6 @@
         <div class="inline-block bg-white rounded-3xl text-left overflow-hidden shadow-xl transform transition-all my-8 align-middle w-[1200px]">
           <!-- Modal content -->
           <div class="bg-white px-4 pt-5 pb-4">
-            <!-- Adjust your modal content here -->
             <iframe :src="modalContent" frameborder="0" allow="autoplay" allowfullscreen class="w-full h-[70vh]"></iframe>
           </div>
           <div class="bg-gray-50 px-4 py-3 flex flex-row-reverse">
