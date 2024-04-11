@@ -45,7 +45,7 @@ body {
   transition: 0.6s;
 }
 
-button .liquid2 {
+.button .liquid2 {
   position: absolute;
   top: -50px; /* Half the original value */
   left: 0;
@@ -136,7 +136,7 @@ button .liquid2 {
 /* Blinking animation */
 @keyframes blink {
   0%, 100% { box-shadow: 0 0 50px 5px blue; }
-  50% { box-shadow: 0 0 50px 10px red; }
+  50%  { box-shadow: 0 0 50px 10px red; }
 }
 
 .blink {
