@@ -18,10 +18,7 @@
       <div v-for="(item, index) in filteredCards" :key="index" class="suitcase-card cursor-pointer" data-aos="fade-up">
         <div class="suitcase-wrapper crd-blue crd-red rounded-full monitor">
           <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
-            <!-- <div class="suitcase-top blink-blue blink-red bg-blue-400 dark:bg-red-400 p-4 relative">
-              <div class="handle bg-blue-600 dark:bg-red-700 w-6 h-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-            </div> -->
-            <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-64 dark:bg-red-200 p-4" @click="toggleVisibility(index)">
+            <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-72 dark:bg-red-200 p-4" @click="toggleVisibility(index)">
               <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5 2xl:pl-5">{{ item.title }}</h1>
               <p class="mb-5 2xl:px-5">{{ item.info }}</p>
             </div>
@@ -153,8 +150,8 @@ const openModal = async (content, index) => {
 	position: relative;
 	border-top: 20px solid #91b3d2; 
   border-right: 5px solid #777;
-	margin: 5%;
-	padding: 2% 2% 4% 2%; 
+  margin: 5%;
+	padding: 5% 5% 7% 5%; 
 	border-radius: 10px; 
 	border-bottom-left-radius: 50% 4%; 
 	border-bottom-right-radius: 50% 4%; 
@@ -167,7 +164,7 @@ const openModal = async (content, index) => {
 	border-top: 20px solid #999;
   border-right: 5px solid #777; 
 	margin: 5%;
-	padding: 2% 2% 4% 2%; 
+	padding: 5% 5% 7% 5%; 
 	border-radius: 10px; 
 	border-bottom-left-radius: 50% 4%; 
 	border-bottom-right-radius: 50% 4%; 
