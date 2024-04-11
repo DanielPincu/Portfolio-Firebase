@@ -149,9 +149,9 @@ const openModal = async (content, index) => {
 	background: #5693be; 
 	position: relative;
 	border-top: 20px solid #91b3d2; 
-  border-right: 5px solid #777;
+  border-right: 5px solid #9c9aa1;
   margin: 5%;
-	padding: 5% 5% 7% 5%; 
+	padding: 5% 5% 8% 5%; 
 	border-radius: 10px; 
 	border-bottom-left-radius: 50% 4%; 
 	border-bottom-right-radius: 50% 4%; 
@@ -159,12 +159,12 @@ const openModal = async (content, index) => {
 }
 
 .dark .monitor {
-	background: #ac8181; 
+	background: #c18181; 
 	position: relative;
-	border-top: 20px solid #999;
-  border-right: 5px solid #777; 
+	border-top: 20px solid #eba2a2;
+  border-right: 5px solid #a18e8e; 
 	margin: 5%;
-	padding: 5% 5% 7% 5%; 
+	padding: 5% 5% 8% 5%; 
 	border-radius: 10px; 
 	border-bottom-left-radius: 50% 4%; 
 	border-bottom-right-radius: 50% 4%; 
@@ -177,7 +177,7 @@ const openModal = async (content, index) => {
 	position: absolute;
 	bottom: 3%;
 	left: 36%;
-	height: .5%; 
+	height: 1%; 
 	width: 28%;
 	background: #ddd; 
 	border-radius: 50%; 
