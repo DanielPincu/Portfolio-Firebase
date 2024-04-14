@@ -18,7 +18,7 @@
       <div v-for="(item, index) in filteredCards" :key="index" class="suitcase-card cursor-pointer" data-aos="fade-up">
         <div class="suitcase-wrapper crd-blue crd-red rounded-full monitor">
           <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
-            <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-72 md:h-56 dark:bg-red-200 p-4" @click="toggleVisibility(index)">
+            <div class="suitcase-body h-72 hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 dark:bg-red-200 p-4" @click="toggleVisibility(index)">
               <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5 2xl:pl-5">{{ item.title }}</h1>
               <p class="mb-5 2xl:px-5">{{ item.info }}</p>
             </div>
