@@ -1,6 +1,6 @@
 <template>  
   <div class="pt-20 dark:border-zinc-700 border-zinc-200 xl:flex justify-center hidden">
-    <h1 class="text-4xl pt-5 pb-16">{{ pageTitle.title }}</h1>
+    <h1 class="text-4xl pt-5 pb-16 dark:text-slate-200">{{ pageTitle.title }}</h1>
   </div>
 
   <div class="xl:grid md:grid-cols-4 grid-cols-2 items-center gap-5 md:pb-10 mb-16 hidden tt">
