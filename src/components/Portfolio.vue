@@ -18,17 +18,17 @@
       <div v-for="(item, index) in filteredCards" :key="index" class="suitcase-card cursor-pointer" data-aos="fade-up">
         <div class="suitcase-wrapper crd-blue crd-red rounded-full monitor">
           <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-600 shadow-xl">
-            <div class="suitcase-body h-72 hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 dark:bg-red-400 p-4" @click="toggleVisibility(index)">
+            <div class="suitcase-body h-72 hover:bg-blue-300 dark:hover:bg-red-500 ease-out duration-500 bg-blue-200 dark:bg-red-400 p-4" @click="toggleVisibility(index)">
               <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5 dark:text-slate-200 2xl:pl-5">{{ item.title }}</h1>
               <p class="mb-5 2xl:px-5 dark:text-slate-200">{{ item.info }}</p>
             </div>
             <div class="flex dark:bg-red-400 flex-col" v-show="visibleDiv[index]">
               <!-- Content to display when the card is expanded -->
               <a @click="openModal(item.remote_link, index)">
-                <img :src="item.image_link" class="bg-blue-200 border-t-4 border-b-4 border-transparent hover:border-blue-500 hover:dark:border-red-500 dark:bg-red-200 ease-in-out duration-300">
+                <img :src="item.image_link" class="bg-blue-200 border-t-4 border-b-4 border-transparent hover:border-blue-600 hover:dark:border-red-600 dark:bg-red-200 ease-in-out duration-300">
               </a>
               <p @click="toggleVisibility(index)" class="bg-blue-200 dark:bg-red-400 m-5 2xl:px-5 dark:text-slate-200">{{ item.extra_info }}</p>
-              <button @click="openModal(item.remote_link, index)" class="mb-10 rounded-full mx-5 bg-gradient-to-r hover:scale-[102%] duration-300 from-blue-400 to-blue-600 dark:from-red-500 dark:to-red-700 text-white">Visit project</button>
+              <button @click="openModal(item.remote_link, index)" class="mb-10 rounded-full mx-5 bg-gradient-to-r hover:scale-[102%] duration-300 from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 dark:from-red-500 dark:to-red-700 hover:dark:from-red-600 hover:dark:to-red-700 text-slate-200 border-b-2 border-white">Visit project</button>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
             <iframe :src="modalContent" frameborder="0" allow="autoplay" allowfullscreen class="w-full h-[70vh]"></iframe>
           </div>
           <div class="bg-gray-50 px-4 py-3 flex flex-row-reverse">
-            <button @click="showModal = false" type="button" class="hover:scale-[101%] duration-300 my-5 inline-flex justify-center w-full rounded-full px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 ml-3 text-sm">
+            <button @click="showModal = false" type="button" class="hover:scale-[101%] duration-300 my-5 inline-flex justify-center w-full rounded-full px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-600 dark:from-red-400 dark:to-red-600 hover:dark:from-red-500 hover:dark:to-red-600 text-slate-200 shadow-xl ml-3 text-sm border-b-2 border-slate-200">
               Close
             </button>
           </div>

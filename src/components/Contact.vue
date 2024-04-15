@@ -10,7 +10,7 @@
 		  <div class="mb-5">
 			<textarea placeholder="Your Message" class="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:shadow-outline" name="message" rows="10" required></textarea>
 		  </div>
-		  <button type="submit" class="uppercase text-sm font-bold tracking-wide p-3 text-white rounded-full w-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-700 shadow-lg border-b-2 border-slate-50">Submit Form</button>
+		  <button type="submit" class="uppercase text-sm font-bold tracking-wide p-3 text-white rounded-full w-full bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-600 hover:scale-[101%] duration-300 dark:from-red-400 dark:to-red-700 hover:dark:from-red-500 hover:dark:to-red-700 shadow-lg border-b-2 border-white">Submit Form</button>
 		</form>
 	  </div>
 	</div>

@@ -51,9 +51,10 @@
     </div>
   </div>
 
+  <!-- Modal -->
  
   <div v-if="showModal" class="fixed inset-0 z-50 overflow-auto bg-black bg-opacity-75 flex justify-center items-center">
-    <div class="bg-white rounded-lg p-8">
+    <div class="bg-white dark:bg-slate-600 rounded-lg p-8">
       
       <div v-if="isVideoCvVisible" class="mb-4">
         <h3 class="text-lg font-bold mb-2">Video CV</h3>
@@ -63,9 +64,9 @@
       
       <div v-if="isDownloadCvVisible">
         <iframe :src="modalUrl" class="w-64 h-32 xl:w-[1000px] xl:h-[500px]" frameborder="0"></iframe>
-        <a :href="modalUrl" class="text-blue-500">Fetch CV</a>
+        <a :href="modalUrl" class="text-blue-500 dark:text-red-500">Fetch CV</a>
       </div>
-      <button @click="closeModal" class="mt-4 px-4 py-2 text-sm w-full bg-blue-500 rounded-full text-white hover:bg-blue-600">Close</button>
+      <button @click="closeModal" class="mt-4 px-4 py-2 text-sm w-full bg-blue-500 dark:bg-red-500 rounded-full text-white hover:bg-blue-600 hover:dark:bg-red-600 hover:scale-[101%] duration-300 border-b-2 border-slate-200">Close</button>
     </div>
   </div>
 </template>
