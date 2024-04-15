@@ -1,5 +1,5 @@
 <template>
-  <div class="border-t-2 border-b-2 pb-20 border-zinc-700 pt-20" id="portfolio">
+  <div class="border-t-2 border-b-2 pb-20 dark:border-zinc-700 border-zinc-200 pt-20" id="portfolio">
     <div>
       <h1 class="text-center text-4xl dark:text-slate-200 pb-10">Showcase</h1>
     </div>

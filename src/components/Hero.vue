@@ -1,10 +1,10 @@
 <template>
   
-  <div class="lg:hidden sticky top-0 z-10 bg-blue-100 dark:bg-red-100 -mx-5">
+  <div class="lg:hidden sticky top-0 z-10 bg-blue-100 dark:bg-red-700 -mx-5">
       <div class="flex justify-center items-center mt-10">
         <div class="flex my-5">
           <div v-for="(navItem, index) in navItems" :key="index" class="mx-3">
-            <a @click="scrollTo(navItem.href, $event)" class="text-lg font-bold cursor-pointer hover:scale-110 hover:transition ease-in-out duration-700">{{ navItem.label }}</a>
+            <a @click="scrollTo(navItem.href, $event)" class="text-lg dark:text-slate-200 font-bold cursor-pointer hover:scale-110 hover:transition ease-in-out duration-700">{{ navItem.label }}</a>
           </div>
         </div>
       </div>
