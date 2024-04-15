@@ -44,7 +44,7 @@ AOS.init({
 
 
 <!-- Left Column -->
-    <div class="col-span-3 hidden lg:block pb-5 border-r-2 border-zinc-200">
+    <div class="col-span-3 hidden lg:block pb-5 border-r-2 border-zinc-200 dark:border-zinc-700">
         
         <CV />
 
@@ -63,7 +63,7 @@ AOS.init({
     
 
 <!-- Right Column -->
-    <div class="col-span-1 hidden lg:block rounded-full xl:bg-blue-100 xl:dark:bg-red-100 xl:border-2 xl:border-blue-300 xl:dark:border-red-300" 
+    <div class="col-span-1 hidden lg:block rounded-full xl:bg-blue-200 xl:dark:bg-red-500 xl:border-2 xl:border-blue-300 xl:dark:border-red-700" 
     
     data-aos="fade-left"
     data-aos-duration="2000"

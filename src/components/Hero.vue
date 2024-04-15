@@ -16,7 +16,7 @@
 
    
     <div class="absolute inset-0 flex flex-col justify-center items-center text-center" id="home">
-      <h1 class="text-sm md:text-xl pb-10 xl:text-3xl font-bold text-white">
+      <h1 class="text-sm md:text-xl pb-10 xl:text-3xl font-bold dark:text-slate-200 text-white">
         I’m Daniel Pincu <br>
         <span class="text-blue-500 dark:text-red-500">Front-end Developer</span>
       </h1>
@@ -28,7 +28,7 @@
       </label>
 
     
-      <p class="text-xl md:text-3xl xl:text-5xl pl-3 mb-1 text-white">Welcome to the Matrix<span class="animate-pulse">|</span></p>
+      <p class="text-xl md:text-3xl xl:text-5xl pl-3 mb-1 text-slate-200">Welcome to the Matrix<span class="animate-pulse">|</span></p>
 
       <div class="flex md:pt-5 2xl:pt-24">
   <button @click="openModal('Download')" class="blink-red hidden dark:block button bg-red-500  shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">

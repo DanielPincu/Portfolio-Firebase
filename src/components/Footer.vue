@@ -3,9 +3,9 @@
 <!--Footer container-->
 <footer
 
-  class="flex flex-col items-end mt-10 bg-blue-200 dark:bg-red-200 text-center">
+  class="flex flex-col items-end mt-10 bg-blue-200 dark:bg-red-500 text-center">
   <div class="container pt-2">
-    <h1 class="text-black pb-5 text-xl">Follow me on Social Media</h1>
+    <h1 class="text-black dark:text-slate-200 pb-5 text-xl">Follow me on Social Media</h1>
     <div class="mb-9 flex justify-center">
       <!-- <a href="https://www.facebook.com/YO8UFO/" class="mr-9">
         <svg
@@ -52,7 +52,7 @@
       <a href="https://www.linkedin.com/in/danielpincu/" target="_blank" class="mr-9 text">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-10 w-10"
+          class="h-10 w-10 dark:text-slate-200"
           fill="currentColor"
           viewBox="0 0 24 24">
           <path
@@ -62,7 +62,7 @@
       <a href="https://github.com/danielpincu" target="_blank" class="text">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-10 mt-1 w-10"
+          class="h-10 mt-1 w-10 dark:text-slate-200"
           fill="currentColor"
           viewBox="0 0 24 24">
           <path
@@ -74,7 +74,7 @@
 
   <!--Copyright section-->
   <div
-    class="w-full text-sm p-4 text-end text-neutral-900 bg-blue-300 dark:bg-red-300">
+    class="w-full text-sm dark:text-slate-200 p-4 text-end text-neutral-900 bg-blue-300 dark:bg-red-400">
     © 2024 Copyright:
     <a
       class="font-semibold"
