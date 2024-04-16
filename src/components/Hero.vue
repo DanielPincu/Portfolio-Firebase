@@ -28,7 +28,7 @@
       </label>
 
     
-      <p class="text-xl md:text-3xl xl:text-5xl pl-3 mb-1 text-slate-200">Welcome to the Matrix<span class="animate-pulse">|</span></p>
+      <p class="text-xl md:text-3xl xl:text-5xl pl-3 mb-1 text-slate-200">Welcome to the Matrix<span class="animate-pulsing">|</span></p>
 
       <div class="flex md:pt-5 2xl:pt-24">
   <button @click="openModal('Download')" class="blink-red hidden dark:block button bg-red-500  shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">
@@ -151,17 +151,3 @@ const closeModal = () => {
 };
 </script>
 
-<style>
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.1;
-  }
-}
-
-.animate-pulse {
-  animation: pulse 0.3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-</style>

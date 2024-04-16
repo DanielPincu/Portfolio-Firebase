@@ -133,7 +133,7 @@ body {
   transition-delay: 0.1s; /* Adjusted */
 }
 
-/* Blinking animation */
+
 @keyframes blink {
   0%, 100% { box-shadow: 0 0 50px 5px blue; }
   50%  { box-shadow: 0 0 50px 10px red; }
@@ -221,4 +221,17 @@ body {
 	background: #ddd; 
 	border-radius: 50%; 
 	box-shadow: 0 0 3px 0 white; 
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+.animate-pulsing {
+  animation: pulse 0.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

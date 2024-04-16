@@ -63,7 +63,7 @@ AOS.init({
     
 
 <!-- Right Column -->
-    <div class="col-span-1 hidden lg:block rounded-full xl:bg-blue-200 xl:dark:bg-red-500 xl:border-2 xl:border-blue-300 xl:dark:border-red-700" 
+    <div class="col-span-1 hidden lg:block rounded-full xl:bg-blue-200 dark:bg-red-500 border-2 border-blue-300 xl:dark:border-red-700 crd-red crd-blue" 
     
     data-aos="fade-left"
     data-aos-duration="2000"

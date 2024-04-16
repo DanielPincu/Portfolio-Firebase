@@ -1,5 +1,5 @@
 <template>  
-  <div class="pt-20 dark:border-zinc-700 border-zinc-200 xl:flex justify-center hidden">
+  <div class="pt-32 dark:border-zinc-700 border-zinc-200 xl:flex justify-center hidden">
     <h1 class="text-4xl pt-5 pb-16 dark:text-slate-200">{{ pageTitle.title }}</h1>
   </div>
 
