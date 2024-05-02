@@ -72,7 +72,7 @@ getDocs(collection(db, "hobbies")).then((snapshot) => {
       <div v-for="item in languages" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-600 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-500 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-xl font-bold dark:text-slate-200 px-4">{{ item.line1 }}</h1>
         <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
-          <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-slate-200 p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-700 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">{{ item.line2 }}%</div>
+          <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-slate-200 p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-700 shadow-lg border-b-2 py-2 border-slate-50" :style="{ width: item.line2 + '%' }"></div>
         </div>
       </div>
     </div>
@@ -82,7 +82,7 @@ getDocs(collection(db, "hobbies")).then((snapshot) => {
       <div v-for="item in skills" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-600 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-500 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-xl font-bold px-4 dark:text-slate-200">{{ item.line1 }}</h1>
         <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
-          <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-slate-200 p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-700 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">{{ item.line2 }}%</div>
+          <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-slate-200 p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-700 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">{{ item.line3 }}</div>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@ getDocs(collection(db, "hobbies")).then((snapshot) => {
       <div v-for="item in tools" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-600 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-500 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-xl font-bold px-4 dark:text-slate-200">{{ item.line1 }}</h1>
         <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
-          <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-slate-200 p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-700 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">{{ item.line2 }}%</div>
+          <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-slate-200 p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-700 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">{{ item.line3 }}</div>
         </div>
       </div>
     </div>
@@ -105,7 +105,7 @@ getDocs(collection(db, "hobbies")).then((snapshot) => {
       <div v-for="item in hobbies" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-600 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-500 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-xl font-bold px-4 dark:text-slate-200">{{ item.line1 }}</h1>
         <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
-          <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-slate-200 p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-700 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">{{ item.line2 }}%</div>
+          <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-slate-200 p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-700 shadow-lg border-b-2 border-slate-50" :style="{ width: item.line2 + '%' }">Addicted</div>
         </div>
       </div>
     </div>

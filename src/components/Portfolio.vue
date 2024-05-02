@@ -15,7 +15,7 @@
 
     <!-- Portfolio cards -->
     <div class="grid md:grid-cols-2 mt-16">
-      <div v-for="(item, index) in filteredCards" :key="index" class="suitcase-card cursor-pointer" data-aos="fade-up">
+      <div v-for="(item, index) in filteredCards" :key="index" class="suitcase-card cursor-pointer">
         <div class="suitcase-wrapper crd-blue crd-red rounded-full monitor">
           <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-600 shadow-xl">
             <div class="suitcase-body h-72 hover:bg-blue-300 dark:hover:bg-red-500 ease-out duration-500 bg-blue-200 dark:bg-red-400 p-4" @click="toggleVisibility(index)">
