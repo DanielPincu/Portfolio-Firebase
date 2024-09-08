@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-
+  </div>
     <!-- Hobbies Section -->
     <div class="pt-10 sticky top-0">
       <h1 v-if="databaseLoaded" class="font-bold text-2xl text-center dark:text-slate-200 pt-5" data-aos="fade-up">Hobbies</h1>
@@ -58,7 +58,7 @@
         </div>
       </div>
     </div>
-  </div>
+  
 </template>
 
 <script setup>
