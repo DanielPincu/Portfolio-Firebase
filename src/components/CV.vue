@@ -1,55 +1,3 @@
-
-<!-- DO NOT DELETE, Case study :) -->
-<!-- <script setup>
-import { ref } from 'vue';
-import { initializeApp } from "firebase/app";
-import { firebaseConfig } from "/firebase"; 
-import { getFirestore, collection, getDocs } from "firebase/firestore";
-
-initializeApp(firebaseConfig);
-
-const my_info = ref([]);
-const languages = ref([]);
-const skills = ref([]);
-const tools = ref([]);
-const hobbies = ref([]);
-
-const db = getFirestore();
-
-
-getDocs(collection(db, "my_info")).then((snapshot) => {   
-    snapshot.forEach((doc) => {
-        my_info.value.push(doc.data());
-    });
-});
-
-getDocs(collection(db, "languages")).then((snapshot) => {   
-    snapshot.forEach((doc) => {
-        languages.value.push(doc.data());
-    });
-});
-
-getDocs(collection(db, "skills")).then((snapshot) => {   
-    snapshot.forEach((doc) => {
-        skills.value.push(doc.data());
-    });
-});
-
-getDocs(collection(db, "tools")).then((snapshot) => {   
-    snapshot.forEach((doc) => {
-        tools.value.push(doc.data());
-    });
-});
-
-getDocs(collection(db, "hobbies")).then((snapshot) => {   
-    snapshot.forEach((doc) => {
-        hobbies.value.push(doc.data());
-    });
-});
-
-</script> -->
-
-
 <template>
   <div v-if="databaseLoaded">
     <div class="flex justify-center" data-aos="fade-right">
@@ -67,6 +15,7 @@ getDocs(collection(db, "hobbies")).then((snapshot) => {
       </div>
     </div>
 
+    <!-- Languages Section -->
     <div class="pt-10">
       <h1 v-if="databaseLoaded" class="font-bold text-2xl text-center dark:text-slate-200 pt-5" data-aos="fade-up">Languages</h1>
       <div v-for="item in languages" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-600 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-500 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
@@ -77,6 +26,7 @@ getDocs(collection(db, "hobbies")).then((snapshot) => {
       </div>
     </div>
 
+    <!-- Skills Section -->
     <div class="pt-10">
       <h1 v-if="databaseLoaded" class="font-bold text-2xl text-center dark:text-slate-200 pt-5" data-aos="fade-up">Skills</h1>
       <div v-for="item in skills" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-600 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-500 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
@@ -87,6 +37,7 @@ getDocs(collection(db, "hobbies")).then((snapshot) => {
       </div>
     </div>
 
+    <!-- Tools Section -->
     <div class="pt-10">
       <h1 v-if="databaseLoaded" class="font-bold text-2xl text-center dark:text-slate-200 pt-5" data-aos="fade-up">Tools</h1>
       <div v-for="item in tools" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-600 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-500 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
@@ -97,10 +48,8 @@ getDocs(collection(db, "hobbies")).then((snapshot) => {
       </div>
     </div>
 
-   
-  </div>
-
-  <div class="pt-10 sticky top-0">
+    <!-- Hobbies Section -->
+    <div class="pt-10 sticky top-0">
       <h1 v-if="databaseLoaded" class="font-bold text-2xl text-center dark:text-slate-200 pt-5" data-aos="fade-up">Hobbies</h1>
       <div v-for="item in hobbies" class="crd-blue crd-red shadow-xl border-2 border-blue-300 dark:border-red-600 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-500 rounded-full items-center h-16 justify-center" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="text-xl font-bold px-4 dark:text-slate-200">{{ item.line1 }}</h1>
@@ -109,7 +58,7 @@ getDocs(collection(db, "hobbies")).then((snapshot) => {
         </div>
       </div>
     </div>
-    
+  </div>
 </template>
 
 <script setup>
@@ -118,6 +67,7 @@ import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "/firebase"; 
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 
+// Initialize Firebase
 initializeApp(firebaseConfig);
 
 const my_info = ref([]);
@@ -127,6 +77,7 @@ const tools = ref([]);
 const hobbies = ref([]);
 const databaseLoaded = ref(false);
 
+// Initialize Firestore
 const db = getFirestore();
 
 Promise.all([
@@ -137,26 +88,35 @@ Promise.all([
   getDocs(collection(db, "hobbies"))
 ])
 .then(([myInfoSnapshot, languagesSnapshot, skillsSnapshot, toolsSnapshot, hobbiesSnapshot]) => {   
+  // Push data into respective arrays
   myInfoSnapshot.forEach((doc) => {
     my_info.value.push(doc.data());
   });
 
+  // Sorting languages by line2 (descending)
   languagesSnapshot.forEach((doc) => {
     languages.value.push(doc.data());
   });
+  languages.value.sort((a, b) => b.line2 - a.line2); // Descending order
 
+  // Sorting skills by line2 (descending)
   skillsSnapshot.forEach((doc) => {
     skills.value.push(doc.data());
   });
+  skills.value.sort((a, b) => b.line2 - a.line2); // Descending order
 
+  // Sorting tools by line2 (descending)
   toolsSnapshot.forEach((doc) => {
     tools.value.push(doc.data());
   });
+  tools.value.sort((a, b) => b.line2 - a.line2); // Descending order
 
   hobbiesSnapshot.forEach((doc) => {
     hobbies.value.push(doc.data());
   });
 
+  // Mark database as loaded
   databaseLoaded.value = true;
 });
 </script>
+
