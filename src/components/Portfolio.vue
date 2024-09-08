@@ -73,6 +73,7 @@ const selectedCategory = ref('');
 const visibleDiv = ref([]);
 const cards = ref([]);
 
+// Function to retrieve the image URL from Firebase Storage
 const getDownloadUrl = async (imagePath) => {
   try {
     const imageRef = storageRef(storage, imagePath);
@@ -83,6 +84,7 @@ const getDownloadUrl = async (imagePath) => {
   }
 };
 
+// Fetch cards from Firestore
 getDocs(collection(db, "cards")).then(async (snapshot) => {
   snapshot.forEach(async (doc) => {
     const cardData = doc.data();
@@ -93,6 +95,7 @@ getDocs(collection(db, "cards")).then(async (snapshot) => {
   visibleDiv.value = Array(cards.value.length).fill(false);
 });
 
+// Compute categories for the dropdown
 const categories = computed(() => {
   const uniqueCategories = new Set();
   cards.value.forEach(card => {
@@ -101,14 +104,25 @@ const categories = computed(() => {
   return Array.from(uniqueCategories);
 });
 
+// Prioritize "Fantasy Quest" and "Trapholt" in the filtered cards
 const filteredCards = computed(() => {
-  if (!selectedCategory.value) {
-    return cards.value;
-  } else {
-    return cards.value.filter(card => card.category === selectedCategory.value);
+  const priorityTitles = ['Fantasy Quest', 'Trapholt'];
+
+  // Filter for priority cards first
+  const priorityCards = cards.value.filter(card => priorityTitles.includes(card.title));
+  
+  // Filter the rest based on the selected category, excluding priority cards
+  let remainingCards = cards.value.filter(card => !priorityTitles.includes(card.title));
+  
+  if (selectedCategory.value) {
+    remainingCards = remainingCards.filter(card => card.category === selectedCategory.value);
   }
+
+  // Return priority cards first, followed by the rest
+  return [...priorityCards, ...remainingCards];
 });
 
+// Toggle visibility for the card's extra information
 const toggleVisibility = (index) => {
   visibleDiv.value.forEach((value, i) => {
     if (i !== index) {
@@ -118,9 +132,11 @@ const toggleVisibility = (index) => {
   visibleDiv.value[index] = !visibleDiv.value[index];
 };
 
+// Modal functionality
 const showModal = ref(false);
 const modalContent = ref('');
 
+// Open the modal with the content (project link or image link)
 const openModal = async (content, index) => {
   toggleVisibility(index);
   if (content.startsWith('http://') || content.startsWith('https://')) {
