@@ -19,7 +19,7 @@
         <div class="suitcase-wrapper crd-blue crd-red rounded-full monitor">
           <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-600 shadow-xl">
             <div class="suitcase-body h-72 hover:bg-blue-300 dark:hover:bg-red-500 ease-out duration-500 bg-blue-200 dark:bg-red-400 p-4" @click="toggleVisibility(index)">
-              <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5 dark:text-slate-200 2xl:pl-5">{{ item.title }}</h1>
+              <h1 class="text-3xl text-gray-800 cursor-pointer mb-5 dark:text-slate-200 2xl:pl-5">{{ item.title }}</h1>
               <p class="mb-5 2xl:px-5 dark:text-slate-200">{{ item.info }}</p>
             </div>
             <div class="flex dark:bg-red-400 flex-col" v-show="visibleDiv[index]">
